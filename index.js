@@ -17,6 +17,7 @@ function changeLanguage(lang) {
         if (translations[lang] && translations[lang][key]) {
             element.textContent = translations[lang][key];
         }
+        console.log(`Changed language to ${lang}`);
     });
     // Оновлюємо атрибут lang на головному тегу HTML для SEO та доступності
     document.documentElement.lang = lang; 
