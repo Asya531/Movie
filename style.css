@@ -1,0 +1,32 @@
+.body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+h1 {
+    color:aliceblue;
+    text-align: center;
+}
+
+h2 {
+    color:aliceblue;
+    text-align: 
+    
+}
+
+.container {
+    display: flex; /* Перетворює контейнер на гнучкий блок */
+    align-items: center; /* Вирівнює вміст вертикально по центру */
+    gap: 500px; /* Додає відстань між фото і текстом */
+}
+
+.container img {
+    max-width: 50%; /* Задає ширину зображення */
+    height: auto;
+}
+
+.float-right {
+    float: right; /* Зображення "спливає" вправо */
+    margin-left: 100px; /* Додає відступ між зображенням та текстом зліва */
+    width: 500px; /* Задає фіксовану ширину */
+}
