@@ -30,3 +30,20 @@ h2 {
     margin-left: 100px; /* Додає відступ між зображенням та текстом зліва */
     width: 1000px; /* Задає фіксовану ширину */
 }
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
