@@ -1,48 +1,40 @@
-.body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-    color:aliceblue;
-    text-align: center;
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: monospace;
 }
 
-h2 {
-    color:aliceblue;
-    text-align: center;
+/* сітка */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.container {
-    display: flex; /* Перетворює контейнер на гнучкий блок */
-    align-items: center; /* Вирівнює вміст вертикально по центру */
-    gap: 500px; /* Додає відстань між фото і текстом */
-}
-
-.container img {
-    max-width: 50%; /* Задає ширину зображення */
-    height: auto;
-}
-
-.float-right {
-    float: right; /* Зображення "спливає" вправо */
-    margin-left: 100px; /* Додає відступ між зображенням та текстом зліва */
-    width: 1000px; /* Задає фіксовану ширину */
-}
-
-.container {
-  width: 100%;
-  max-width: 100%;
+/* картка фільму */
+.movie {
+  border: 2px solid white;
   padding: 10px;
+  text-align: center;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-video {
+/* картинки */
+.movie img {
   width: 100%;
-  max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* посилання */
+.movie a {
+  display: block;
+  margin-top: 10px;
+  color: #fefdff;
+  text-decoration: none;
 }
